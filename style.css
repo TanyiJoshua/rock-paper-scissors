@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,300&display=swap');
+* {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: 'Asap', sans-serif;
+}
+
+body {
+    background-color: rgb(11, 69, 103);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/*Heading*/
+header {
+    background: wheat;
+    padding: 20px;
+}
+header > h1{
+    color: brown;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xxx-large;
+}
+/*Players*/
+.badge {
+    background: rgb(7, 54, 83);
+    color: wheat;
+    font-size: 14px;
+    padding: 2px 10px;
+    font-weight: bolder;
+    font-size: x-large;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    
+}
+.badge2 {
+    background: rgb(7, 54, 83);
+    color: wheat;
+    font-size: 14px;
+    padding: 2px 10px;
+    font-weight: bolder;
+    font-size: x-large;
+    text-transform: uppercase;
+    position: absolute;
+    top: 20%;
+    right: 27%;
+    
+}
+/*Animated Image*/
+#hand1 {
+    margin: 90px 0;
+    
+}
+#hand2 {
+    margin: 50px 0;
+    text-align: center;
+}
+
+#img1 {
+    padding-top: 20px;
+    margin-left: 560px;
+    height: 12rem;
+    border: none;
+}
+#img2 {
+    padding-top: 20px;
+    position: absolute;
+    top: 24%;
+    left: 57%;
+    height: 12rem;
+    border: none;
+}
+
+/*Buttons*/
+.choices img {
+    height: 5rem;
+    text-align: center;
+}
+button {
+    display: inline-block;
+    background: none;
+    border: 4px solid white;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+button:hover{
+    cursor: pointer;
+    background: rgb(7, 54, 83);
+}
+button:active { /* animation of buttons visible */
+    transform: translateY(-60%, 5px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+#rock {
+    position: absolute;
+    left: 615px;
+    top: 58%;
+    visibility: hidden;
+}
+#paper {
+    position: absolute;
+    left: 805px;
+    top: 58%;
+    visibility: hidden;
+}
+#scissors {
+    position: absolute;
+    top: 58%;
+    left: 995px;
+    visibility: hidden;
+}
+#start {
+    position: absolute;
+    font-size: x-large;
+    text-transform: uppercase;
+    color: floralwhite;
+    backdrop-filter: blur(10px);
+    border: solid 4px floralwhite;
+    border-radius: 50rem;
+    top: 60%;
+    left: 47.5%;
+}
+
+@keyframes shakeLeft {
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            transform: translateY(-50px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+}
+
+@keyframes shakeRight {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

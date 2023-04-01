@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ROCK PAPER SCISSORS GAME</title>
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <div >
+        <div class="badge">user</div>
+        <div class="badge2">comp</div>
+    </div>
+
+    <!-- Animated hand movements -->
+    <div id="hand1">
+        
+        <img src="Images/Rock-User.png" id="img1">
+    </div>
+    <div id="hand2">
+        
+        <img src="Images/Rock.png" id="img2">
+    </div>
+
+    <div class="choices">
+        <button type="button" onclick="game(0)" id="rock"><img src="Images/Button-Rock.png" alt="" srcset=""></button>
+        <button type="button" onclick="game(1)" id="paper"><img src="Images/Button-Paper.png" alt="" srcset=""></button>
+        <button type="button" onclick="game(2)" id="scissors"><img src="Images/Button-Scissors.png" alt="" srcset=""></button>
+        <button type="button" onclick="start()" id="start">🆕START🆕</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
